@@ -2,7 +2,7 @@
 remote_theme: 'epidrome/cover-card'
 
 # Title and tag line
-title: 'My name'
+title: 'Navee Kaur'
 description: 'I am amazing.'
 
 # Images
@@ -11,28 +11,11 @@ background: 'background.jpg'
 favicon: 'favicon.ico'
 
 # Online profiles
-dribbble: ''
-facebook: ''
-twitter: ''
-linkedin: ''
-instagram: ''
-pinterest: ''
-youtube: ''
+linkedin: 'https://www.linkedin.com/in/navee-kaur/'
 github-user: ''
-#gitlab-user: ''
-#codepen: ''
-#steam: ''
-#soundcloud: ''
-#lastfm: ''
-#stack-overflow: ''
-#reddit: ''
-#medium:  ''
-#tumblr: ''
-weibo: ''
-vk: ''
 blog_url: ''
 email: ''
-messenger: ''
+
 
 # Advanced settings
 plugins:
