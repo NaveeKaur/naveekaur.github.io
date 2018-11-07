@@ -1,11 +1,9 @@
 # Theme
-remote_theme: 'front-cover'
+remote_theme: 'dashingcode/front-cover'
 
 # Site settings
 name: "Navee Kaur"
 description: "Nifty little description"
-url: ""
-
 
 # Delete the lines you don't need
 # about 5 elements are recomended
