@@ -1,5 +1,5 @@
 # Theme
-remote_theme: 'epidrome/cover-card'
+remote_theme: 'dashingcode/front-cover'
 
 # Title and tag line
 title: 'Navee Kaur'
@@ -13,7 +13,7 @@ favicon: 'favicon.ico'
 # Online profiles
 linkedin: navee-kaur
 github-user: ''
-blog_url: naveekaur.github.io/_pages/blogs.html
+blog_url: /blogs/
 email: 'nk33@uw.edu'
 
 # Advanced settings
