@@ -1,3 +1,6 @@
+# Theme
+remote_theme: 'dashingcode/front-cover'
+
 # Site settings
 name: "Navee Kaur"
 description: "Nifty little description"
