@@ -1,11 +1,9 @@
-<!DOCTYPE html>
-<html>
-<head>
+--
+layout: post
+date: 2018-11-07
+--
 <title>Writing Sample #1</title>
-</head>
 <body>
-
-<a target='_blank' href={require('/pdfs/Compost_waste_paper')}>PDF Doc</a>
-
+<object data="{{ /pdfs/Compost_waste_paper }}" width="1000" height="1000" type='application/pdf'/>
 </body>
 </html>
