@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-	<html>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		<head>
-			<title>{{ page.title }}</title>
-			<!-- link to main stylesheet -->
-			<link rel="stylesheet" type="text/css" href="/css/main.css">
-		</head>
-    <style>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<head>
+<title>{{ page.title }}</title>
+	<!-- link to main stylesheet -->
+<link rel="stylesheet" type="text/css" href="/css/main.css">
+</head>
+<style>
 body {margin:0;}
 
 .icon-bar {
@@ -35,15 +35,16 @@ body {margin:0;}
     background-color: #000000;
 }
 </style>
-		<body>
-      <div class="icon-bar">
+<body>
+{% include google_analytics.html %}
+    <div class="icon-bar">
     <a class="active" href="/"><i class="fa fa-home"></i></a>
     <a href="#"><i class="fa fa-search"></i></a>
     </div>
-			<div class="container">
+	<div class="container">
 
-			{{ content }}
+	{{ content }}
 
-			</div><!-- /.container -->
-		</body>
-	</html>
+	</div><!-- /.container -->
+</body>
+</html>
