@@ -1,9 +1,189 @@
-<p>–
-layout: default
-date: 2018-11-07
-–</p>
-<p>This document is a compare and contrast document I created to compare web services. 
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body { 
+    margin-right: 370px;
+    margin-left: 370px;
+    margin-top: 0px;
+    text-align: center;
+}
+.navbar {
+    overflow: hidden;
+    background-color: #555;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.navbar a {
+    float: left;
+    font-size: 26px;
+    color: white;
+    text-align: center;
+    padding: 9px 12px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.dropdown {
+    float: right;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    cursor: pointer;
+    font-size: 16px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+    background-color: black;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #555;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: center;
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+
+.dropdown-content a:hover {
+    background-color: #000000;
+}
+
+.show {
+    display: block;
+}
+</style>
+</head>
+<body>
+
+<div class="navbar">
+    <a href="/">Home</i></a> 
+    <a class="active" href="/blog/">Posts</i></a>
+  <div class="dropdown">
+    <button class="dropbtn" onclick="myFunction()">More
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content" id="myDropdown">
+      <a href="https://github.com/NaveeKaur">GitHub</a>
+      <a href="https://linkedin.com/in/navee-kaur">LinkedIn</a>
+      <a href="/pdfs/NaveeKaur_Nov2018Resume.pdf">Resume</a>
+    </div>
+  </div> 
+</div>
+
+ </div>
+    <div class="container">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+    box-sizing: border-box;
+}
+
+div {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+/* Add a gray background color with some padding */
+body {
+    font-family: Arial;
+    padding: 20px;
+    background: #000000;
+}
+
+/* Columns for posts */
+.column {   
+    float: center;
+    width: 100%;
+}
+
+/* Add a card effect for articles */
+.card {
+     background-color: white;
+     padding: 20px;
+     margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {   
+        width: 100%;
+        padding: 0;
+    }
+}
+</style>
+</head>
+<body>
+
+<div class="row">
+  <div class="column">
+  	<div class="card">
+      <div class="post">
+  		<div>
+  			<header class="post-header">
+    		<h1 class="post-title">Writing Sample 2</h1>
+  			</header>
+  			<article class="post-content"><p>This document is a compare and contrast document I created to compare web services. 
 It's intended for developer audiences, primarily to help an engineer understand the difference between a SOAP interface and a REST interface. </p>
 
 <p>PDf file: 
 <a href="https://naveekaur.github.io/pdfs/API_memo.pdf">Memo.pdf</a></p>
+</article>
+  		</div>
+	  </div>
+    </div>
+  </div>
+</div>
+
+</body>
+
+    </div><!-- /.container -->
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+    var myDropdown = document.getElementById("myDropdown");
+      if (myDropdown.classList.contains('show')) {
+        myDropdown.classList.remove('show');
+      }
+  }
+}
+</script>
+</body>
+</html>

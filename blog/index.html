@@ -1,11 +1,70 @@
 ---
 layout: default
-title: Navee's Blog
+title: Portfolio and blog links
 ---
-	<h1>{{ page.title }}</h1>
-	<ul class="posts">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+    box-sizing: border-box;
+}
 
-	  {% for post in site.posts %}
-	    <li><span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
-	  {% endfor %}
-	</ul>
+/* Add a gray background color with some padding */
+body {
+    font-family: Arial;
+    padding: 20px;
+    background: #000000;
+}
+
+/* Columns for posts */
+.column {   
+    float: center;
+    width: 100%;
+}
+
+
+/* Post image */
+.pimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+     background-color: white;
+     padding: 20px;
+     margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {   
+        width: 100%;
+        padding: 0;
+    }
+}
+</style>
+</head>
+<body>
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+    {% for post in site.posts %}
+      <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+      <h5><time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date_to_long_string }}</time></h5>
+      <div class="pimg" style="height:200px;">Image</div>
+      <p>{{ post.excerpt }}</p><a href="{{ post.url }}">...</a>
+    {% endfor %}
+    </div>
+  </div>
+</div>
+
+</body>

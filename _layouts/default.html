@@ -1,51 +1,120 @@
 <!DOCTYPE html>
 <html>
+<head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<head>
-<title>{{ page.title }}</title>
-	<!-- link to main stylesheet -->
-<link rel="stylesheet" type="text/css" href="/css/main.css">
-</head>
-	{% include googslytics.html %}
-
 <style>
-body {margin:0;}
-
-.icon-bar {
-    width: 100%;
-    background-color: #555;
-    overflow: auto;
-}
-
-.icon-bar a {
-    float: right;
-    width: 20%;
+body { 
+    margin-right: 370px;
+    margin-left: 370px;
+    margin-top: 0px;
     text-align: center;
-    padding: 12px 0;
-    transition: all 0.3s ease;
+}
+.navbar {
+    overflow: hidden;
+    background-color: #555;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.navbar a {
+    float: left;
+    font-size: 26px;
     color: white;
-    font-size: 36px;
-
+    text-align: center;
+    padding: 9px 12px;
+    text-decoration: none;
+    transition: all 0.3s ease;
 }
 
-.icon-bar a:hover {
+.dropdown {
+    float: right;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    cursor: pointer;
+    font-size: 16px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+    background-color: black;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #555;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: center;
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+
+.dropdown-content a:hover {
     background-color: #000000;
 }
 
-.active {
-    background-color: #000000;
+.show {
+    display: block;
 }
 </style>
+</head>
 <body>
-    <div class="icon-bar">
-    <a class="active" href="/"><i class="fa fa-home"></i></a>
-    <a href="#"><i class="fa fa-search"></i></a>
+
+<div class="navbar">
+    <a href="/">Home</i></a> 
+    <a class="active" href="/blog/">Posts</i></a>
+  <div class="dropdown">
+    <button class="dropbtn" onclick="myFunction()">More
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content" id="myDropdown">
+      <a href="https://github.com/NaveeKaur">GitHub</a>
+      <a href="https://linkedin.com/in/navee-kaur">LinkedIn</a>
+      <a href="/pdfs/NaveeKaur_Nov2018Resume.pdf">Resume</a>
     </div>
-	<div class="container">
+  </div> 
+</div>
 
-	{{ content }}
+ </div>
+    <div class="container">
 
-	</div><!-- /.container -->
+    {{ content }}
+
+    </div><!-- /.container -->
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+    var myDropdown = document.getElementById("myDropdown");
+      if (myDropdown.classList.contains('show')) {
+        myDropdown.classList.remove('show');
+      }
+  }
+}
+</script>
 </body>
 </html>

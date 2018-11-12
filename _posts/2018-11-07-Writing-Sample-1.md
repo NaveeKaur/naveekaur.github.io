@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: Writing Sample 1
 date: 2018-11-07
 ---

@@ -1,69 +1,195 @@
 <!DOCTYPE html>
 <html>
+<head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<head>
-<title>Navee's Blog</title>
-	<!-- link to main stylesheet -->
-<link rel="stylesheet" type="text/css" href="/css/main.css">
-</head>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-129006297-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-129006297-1');
-</script>
-
-
 <style>
-body {margin:0;}
-
-.icon-bar {
-    width: 100%;
-    background-color: #555;
-    overflow: auto;
-}
-
-.icon-bar a {
-    float: right;
-    width: 20%;
+body { 
+    margin-right: 370px;
+    margin-left: 370px;
+    margin-top: 0px;
     text-align: center;
-    padding: 12px 0;
-    transition: all 0.3s ease;
+}
+.navbar {
+    overflow: hidden;
+    background-color: #555;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.navbar a {
+    float: left;
+    font-size: 26px;
     color: white;
-    font-size: 36px;
-
+    text-align: center;
+    padding: 9px 12px;
+    text-decoration: none;
+    transition: all 0.3s ease;
 }
 
-.icon-bar a:hover {
+.dropdown {
+    float: right;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    cursor: pointer;
+    font-size: 16px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+    background-color: black;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #555;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: center;
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+
+.dropdown-content a:hover {
     background-color: #000000;
 }
 
-.active {
-    background-color: #000000;
+.show {
+    display: block;
 }
 </style>
+</head>
 <body>
-    <div class="icon-bar">
-    <a class="active" href="/"><i class="fa fa-home"></i></a>
-    <a href="#"><i class="fa fa-search"></i></a>
+
+<div class="navbar">
+    <a href="/">Home</i></a> 
+    <a class="active" href="/blog/">Posts</i></a>
+  <div class="dropdown">
+    <button class="dropbtn" onclick="myFunction()">More
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content" id="myDropdown">
+      <a href="https://github.com/NaveeKaur">GitHub</a>
+      <a href="https://linkedin.com/in/navee-kaur">LinkedIn</a>
+      <a href="/pdfs/NaveeKaur_Nov2018Resume.pdf">Resume</a>
     </div>
-	<div class="container">
+  </div> 
+</div>
 
-		<h1>Navee's Blog</h1>
-	<ul class="posts">
+ </div>
+    <div class="container">
 
-	  
-	    <li><span>07 Nov 2018</span> » <a href="/blog/2018/11/07/Writing-Sample-2" title="Writing Sample 2">Writing Sample 2</a></li>
-	  
-	    <li><span>07 Nov 2018</span> » <a href="/blog/2018/11/07/Writing-Sample-1" title="Writing Sample 1">Writing Sample 1</a></li>
-	  
-	</ul>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+    box-sizing: border-box;
+}
+
+/* Add a gray background color with some padding */
+body {
+    font-family: Arial;
+    padding: 20px;
+    background: #000000;
+}
+
+/* Columns for posts */
+.column {   
+    float: center;
+    width: 100%;
+}
 
 
-	</div><!-- /.container -->
+/* Post image */
+.pimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+     background-color: white;
+     padding: 20px;
+     margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {   
+        width: 100%;
+        padding: 0;
+    }
+}
+</style>
+</head>
+<body>
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+    
+      <h2><a href="/blog/2018/11/07/Writing-Sample-2">Writing Sample 2</a></h2>
+      <h5><time datetime="2018-11-07">07 November 2018</time></h5>
+      <div class="pimg" style="height:200px;">Image</div>
+      <p><p>This document is a compare and contrast document I created to compare web services. 
+It's intended for developer audiences, primarily to help an engineer understand the difference between a SOAP interface and a REST interface. </p>
+
+</p><a href="/blog/2018/11/07/Writing-Sample-2">...</a>
+    
+      <h2><a href="/blog/2018/11/07/Writing-Sample-1">Writing Sample 1</a></h2>
+      <h5><time datetime="2018-11-07">07 November 2018</time></h5>
+      <div class="pimg" style="height:200px;">Image</div>
+      <p><p>This is the Process &amp; Instruction writing assignment from my CSS 301 course (*Technical Writing for Computing Professionals*). The purpose of this assignment was to write a chapter for an instruction manual about a topic the audience may be familiar with, but unknown to them in a specific context. </p>
+
+</p><a href="/blog/2018/11/07/Writing-Sample-1">...</a>
+    
+    </div>
+  </div>
+</div>
+
+</body>
+
+    </div><!-- /.container -->
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+    var myDropdown = document.getElementById("myDropdown");
+      if (myDropdown.classList.contains('show')) {
+        myDropdown.classList.remove('show');
+      }
+  }
+}
+</script>
 </body>
 </html>
