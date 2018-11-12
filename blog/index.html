@@ -8,7 +8,12 @@ title: Portfolio and blog links
     box-sizing: border-box;
 }
 
-/* Add a gray background color with some padding */
+div {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+/* Add a pretty background with some padding */
 body {
     font-family: Arial;
     padding: 20px;
@@ -21,8 +26,8 @@ body {
     width: 100%;
 }
 
-
 /* Post image */
+/*      <div class="pimg" style="height:20px;"></div> */
 .pimg {
     background-color: #aaa;
     width: 100%;
@@ -60,8 +65,7 @@ body {
     {% for post in site.posts %}
       <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
       <h5><time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date_to_long_string }}</time></h5>
-      <div class="pimg" style="height:200px;">Image</div>
-      <p>{{ post.excerpt }}</p><a href="{{ post.url }}">...</a>
+      <p>{{ post.excerpt }}</p><a href="{{ post.url }}">More</a>
     {% endfor %}
     </div>
   </div>

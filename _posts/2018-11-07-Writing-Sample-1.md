@@ -3,6 +3,7 @@ layout: post
 title: Writing Sample 1
 date: 2018-11-07
 ---
+
 <p>This is the Process & Instruction writing assignment from my CSS 301 course (*Technical Writing for Computing Professionals*). The purpose of this assignment was to write a chapter for an instruction manual about a topic the audience may be familiar with, but unknown to them in a specific context. </p>
 
 <p>As a biologist, I have always advocated for a pollution-free environment, so I chose to write a chapter on composting waste. I wrote the entirety of this document myself and all of my references are cited from credible sources, with Figure 1 as the exception; Figure 1 is composed of imaginary data, as this was one of the requirements of this assignment. </p>
